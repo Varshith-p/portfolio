@@ -42,7 +42,7 @@ export default function Home() {
           </ul>
         </nav>
       </header>
-      <main className="px-10 md:px-20 lg:px-36 dark:bg-gray-900">
+      <main className="px-10 pb-8 md:px-20 lg:px-36 dark:bg-gray-900">
         <section className="flex flex-col items-center justify-between md:flex-row">
           <div>
             <div className="text-center p-10">
@@ -52,7 +52,7 @@ export default function Home() {
               <h3 className="text-2xl py-2 dark:text-white">
                 Developer and Designer
               </h3>
-              <p className="text-md py-2 md:text-lg dark:text-white">
+              <p className="text-md py-2 md:text-lg dark:text-gray-400">
                 Join me below and let's get cracking!
               </p>
             </div>
@@ -80,21 +80,21 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="bg-gradient-to-b from-cyan-500 to-teal-500 rounded-full w-80 h-80 mx-auto my-12 flex items-center md:mx-0">
+          <div className="bg-gradient-to-b from-cyan-500 to-teal-500 rounded-full w-60 h-60 mx-auto my-12 flex items-center md:w-70 md:h-70 md:mx-0 lg:w-80 lg:h-80">
             <Image src={avatar} />
           </div>
         </section>
-        <section>
+        <section className="shadow-lg py-2 mt-4 rounded-xl dark:bg-white">
           <h3 className="text-3xl text-cyan-500 font-medium my-6 text-center">
             About ME!
           </h3>
-          <p className="text-lg leading-7 text-center pb-10 md:px-20  dark:text-white">
+          <p className="text-md text-center px-10 pb-10 md:px-20 md:text-lg">
             I don't like to define myself by the work I've done. I define myself
             by the work I want to do. Skills can be acquired, personality is
             inherit. I prefer to keep learning, continue challenging myself, and
             do interesting things that matter.
           </p>
-          <p className="text-lg leading-7 text-center pb-10 md:px-20 dark:text-white">
+          <p className="text-md text-center px-10 pb-10 md:px-20 md:text-lg">
             I am passionate, expressive, multi-talented spirit with a natural
             ability to entertain and inspire. I like to develop expertise in a
             number of areas over the course of my life and career.
