@@ -13,7 +13,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="w-full px-6 py-8 max-w-7xl mx-auto flex justify-between">
+    <header className="w-full px-6 py-7 max-w-7xl mx-auto flex justify-between">
       <Link href="/" className="w-fit">
         <Image
           src="./logo.svg"

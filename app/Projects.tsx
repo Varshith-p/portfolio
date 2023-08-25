@@ -37,12 +37,14 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section className="max-w-7xl mx-auto w-full px-6 mt-16">
-      <h1 className="text-4xl font-semibold">Latest Projects</h1>
-      <div className="py-8 grid grid-cols-3 gap-8">
+    <section className="max-w-7xl mx-auto w-full px-6 mt-10 md:mt-[5rem]">
+      <h1 className="text-4xl md:text-5xl font-semibold max-w-min leading-tight">
+        Latest Projects
+      </h1>
+      <div className="py-6 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <article className="flex flex-col gap-4">
           <h1 className="font-semibold text-2xl">Job Tracker</h1>
-          <div className="flex flex-wrap gap-y-2 justify-between">
+          <div className="flex flex-wrap gap-y-2 gap-x-1 md:justify-between">
             <Badge className={`bg-[#38BDF8] hover:bg-[#38BDF8]`}>React</Badge>
             <Badge className={`bg-[#026e00] hover:bg-[#026e00]`}>Node.js</Badge>
             <Badge className={`bg-[#F59E0B] hover:bg-[#F59E0B}`}>
@@ -54,36 +56,36 @@ const Projects = () => {
             </Badge>
             <Badge className={`bg-[#d63aff] hover:bg-[#d63aff]`}>JWT</Badge>
           </div>
-          <div className="rounded-lg p-6 bg-[#FBED96]">
+          <div className="rounded-lg p-3 bg-[#ABECD6]">
             <Image
               src="/JobTracker.png"
               alt="job tracker image"
               width={200}
               height={200}
-              className="w-full rounded-md"
+              className="w-full h-[200px] rounded-md"
             />
           </div>
           <div className="flex w-full justify-evenly">
             <a
               href="https://github.com/Varshith-p/job-tracker-mern"
               target="_blank"
-              className="flex items-center gap-1 font-medium"
+              className="flex items-center gap-1 font-semibold hover:bg-black hover:text-white rounded-xl px-3 py-1 transition-all duration-300"
             >
               GitHub <AiFillGithub />
             </a>
             <a
-              href="https://github.com/Varshith-p/job-tracker-mern"
+              href="https://job-tracker-mern.cyclic.app/"
               target="_blank"
-              className="flex items-center gap-1 font-medium"
+              className="flex items-center gap-1 font-semibold hover:bg-black hover:text-white rounded-xl px-3 py-1 transition-all duration-300"
             >
               Deployed Link <GlobeAltIcon className="w-4 h-4" />
             </a>
           </div>
         </article>
         <article className="flex flex-col gap-4">
-          <h1 className="font-semibold text-2xl">Job Tracker</h1>
-          <div className="flex flex-wrap gap-y-2 justify-between">
-            <Badge className={`bg-[#38BDF8] hover:bg-[#38BDF8]`}>React</Badge>
+          <h1 className="font-semibold text-2xl">Assignment Portal</h1>
+          <div className="flex flex-wrap gap-y-2 gap-x-1 md:justify-between">
+            <Badge className={`bg-red-700 hover:bg-red-700`}>Angular</Badge>
             <Badge className={`bg-[#026e00] hover:bg-[#026e00]`}>Node.js</Badge>
             <Badge className={`bg-[#F59E0B] hover:bg-[#F59E0B}`}>
               Express.js
@@ -92,69 +94,66 @@ const Projects = () => {
             <Badge className={`bg-[#F43F5E] hover:bg-[#F43F5E]`}>
               Rest API
             </Badge>
-            <Badge className={`bg-[#d63aff] hover:bg-[#d63aff]`}>JWT</Badge>
+            <Badge className={`bg-sky-500 hover:bg-sky-500`}>TailwindCSS</Badge>
           </div>
-          <div className="rounded-lg p-6 bg-gradient-to-r from-[#FBED96] to-[#ABECD6]">
+          <div className="rounded-lg p-3 bg-[#ABECD6]">
             <Image
-              src="/JobTracker.png"
-              alt="job tracker image"
+              src="/AssignmentPortal.png"
+              alt="assignment portal image"
               width={200}
               height={200}
-              className="w-full rounded-md"
+              className="w-full h-[200px] rounded-md"
             />
           </div>
           <div className="flex w-full justify-evenly">
             <a
-              href="https://github.com/Varshith-p/job-tracker-mern"
+              href="https://github.com/Varshith-p/assignment-portal-express-backend"
               target="_blank"
-              className="flex items-center gap-1 font-medium"
+              className="flex items-center gap-1 font-semibold hover:bg-black hover:text-white rounded-xl px-3 py-1 transition-all duration-300"
             >
               GitHub <AiFillGithub />
             </a>
             <a
-              href="https://github.com/Varshith-p/job-tracker-mern"
+              href="https://assignment-portal-angular-frontend.vercel.app/"
               target="_blank"
-              className="flex items-center gap-1 font-medium"
+              className="flex items-center gap-1 font-semibold hover:bg-black hover:text-white rounded-xl px-3 py-1 transition-all duration-300"
             >
               Deployed Link <GlobeAltIcon className="w-4 h-4" />
             </a>
           </div>
         </article>
         <article className="flex flex-col gap-4">
-          <h1 className="font-semibold text-2xl">Job Tracker</h1>
-          <div className="flex flex-wrap gap-y-2 justify-between">
-            <Badge className={`bg-[#38BDF8] hover:bg-[#38BDF8]`}>React</Badge>
-            <Badge className={`bg-[#026e00] hover:bg-[#026e00]`}>Node.js</Badge>
-            <Badge className={`bg-[#F59E0B] hover:bg-[#F59E0B}`}>
-              Express.js
+          <h1 className="font-semibold text-2xl">Portfolio</h1>
+          <div className="flex flex-wrap gap-y-2 gap-x-1 md:justify-between">
+            <Badge className={`bg-black hover:bg-black`}>Next.js</Badge>
+            <Badge className={`bg-[#3178c6] hover:bg-[#3178c6]`}>
+              TypeScript
             </Badge>
+            <Badge className={`bg-sky-500 hover:bg-sky-500`}>TailwindCSS</Badge>
             <Badge className={`bg-[#00684a] hover:bg-[#00684a]`}>MongoDB</Badge>
-            <Badge className={`bg-[#F43F5E] hover:bg-[#F43F5E]`}>
-              Rest API
-            </Badge>
-            <Badge className={`bg-[#d63aff] hover:bg-[#d63aff]`}>JWT</Badge>
+            <Badge className={`bg-[#026e00] hover:bg-[#026e00]`}>Node.js</Badge>
           </div>
-          <div className="rounded-lg p-6 bg-[#ABECD6]">
+          <div className="rounded-lg p-3 bg-[#ABECD6]">
             <Image
-              src="/JobTracker.png"
+              src="/Portfolio.png"
               alt="job tracker image"
               width={200}
               height={200}
-              className="w-full rounded-md"
+              className="w-full h-[200px] rounded-md"
             />
           </div>
           <div className="flex w-full justify-evenly">
             <a
               href="https://github.com/Varshith-p/job-tracker-mern"
               target="_blank"
-              className="flex items-center gap-1 font-medium"
+              className="flex items-center gap-1 font-semibold hover:bg-black hover:text-white rounded-xl px-3 py-1 transition-all duration-300"
             >
               GitHub <AiFillGithub />
             </a>
             <a
               href="https://github.com/Varshith-p/job-tracker-mern"
               target="_blank"
-              className="flex items-center gap-1 font-medium"
+              className="flex items-center gap-1 font-semibold hover:bg-black hover:text-white rounded-xl px-3 py-1 transition-all duration-300"
             >
               Deployed Link <GlobeAltIcon className="w-4 h-4" />
             </a>
