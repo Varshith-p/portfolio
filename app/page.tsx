@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import Contact from "./Contact";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       </main>
       <Projects />
       <Experience />
+      <Contact />
     </>
   );
 }
