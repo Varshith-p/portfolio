@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "@/components/ui/button";
 import {
   HoverCard,
   HoverCardContent,
@@ -10,16 +9,17 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111827] text-white py-4">
-      <div className="flex w-full justify-center items-center gap-2">
+    <footer className="bg-[#111827] text-white py-4 text-xs lg:text-base">
+      <div className="flex w-full justify-center items-center gap-2 pb-2">
         <HoverCard>
           <HoverCardTrigger asChild>
-            <Button
-              variant="link"
-              className="text-white text-lg flex items-center gap-1"
+            <a
+              href="https://www.linkedin.com/in/varshith-p/"
+              target="_blank"
+              className="text-white md:text-lg flex items-center gap-1 hover:underline"
             >
               <AiFillLinkedin /> <span>LinkedIn</span>
-            </Button>
+            </a>
           </HoverCardTrigger>
           <HoverCardContent className="w-80">
             <div className="flex justify-between space-x-4">
@@ -32,12 +32,13 @@ const Footer = () => {
         </HoverCard>
         <HoverCard>
           <HoverCardTrigger asChild>
-            <Button
-              variant="link"
-              className="text-white text-lg flex items-center gap-1"
+            <a
+              href="https://github.com/Varshith-p"
+              target="_blank"
+              className="text-white md:text-lg flex items-center gap-1 hover:underline"
             >
               <AiFillGithub /> <span>Github</span>
-            </Button>
+            </a>
           </HoverCardTrigger>
           <HoverCardContent className="w-80">
             <div className="flex justify-between space-x-4">
@@ -50,8 +51,16 @@ const Footer = () => {
         </HoverCard>
       </div>
       <div className="flex w-full justify-center items-center gap-2">
-        <p>Developed by Varshith Puligadda | Design by </p>
-        <Image src="./rafo.svg" alt="rafo logo" width={34} height={24} />
+        <p>
+          Developed by Varshith Puligadda | Design by{" "}
+          <Image
+            src="./rafo.svg"
+            alt="rafo logo"
+            width={34}
+            height={24}
+            className="inline-block w-[24px] h-[20px] lg:w-[34px] lg:h-[24px]"
+          />
+        </p>
       </div>
     </footer>
   );

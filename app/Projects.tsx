@@ -41,7 +41,7 @@ const Projects = () => {
       <h1 className="text-4xl md:text-5xl font-semibold max-w-min leading-tight">
         Latest Projects
       </h1>
-      <div className="py-6 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="py-6 md:py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <article className="flex flex-col gap-4">
           <h1 className="font-semibold text-2xl">Job Tracker</h1>
           <div className="flex flex-wrap gap-y-2 gap-x-1 md:justify-between">

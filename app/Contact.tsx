@@ -16,11 +16,11 @@ const Contact = () => {
 
   return (
     <section className="max-w-7xl mx-auto w-full px-6 mt-10 md:mt-[5rem] pb-12">
-      <h1 className="text-4xl md:text-5xl font-semibold max-w-xl leading-snug">
-        Do you have any idea?{" "}
-        <span className="text-4xl">Let&apos;s build it together!</span>
+      <h1 className="text-3xl md:text-5xl font-semibold max-w-xl leading-snug">
+        Do you have an idea?{" "}
+        <span className="md:text-4xl">Let&apos;s build it together!</span>
       </h1>
-      <form className="w-[70%] mx-auto py-6 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+      <form className="pr-1 md:w-[70%] mx-auto py-6 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
         <div className="flex flex-col gap-1">
           <label htmlFor="name" className="font-semibold">
             Your Name
@@ -43,7 +43,7 @@ const Contact = () => {
             className="border border-gray-500 rounded-md px-2 py-1"
           />
         </div>
-        <div className="flex flex-col col-span-2 gap-1">
+        <div className="flex flex-col md:col-span-2 gap-1">
           <label htmlFor="message" className="font-semibold">
             Your Message
           </label>
@@ -52,12 +52,12 @@ const Contact = () => {
             name="message"
             id="message"
             cols={30}
-            rows={8}
+            rows={7}
           ></textarea>
         </div>
         <button
           onClick={handleSubmit}
-          className="bg-[#ABECD6] text-lg font-semibold py-2 rounded-md"
+          className="bg-[#ABECD6] text-lg font-semibold py-2 rounded-md hover:shadow-md transition-all"
         >
           Send Message
         </button>
