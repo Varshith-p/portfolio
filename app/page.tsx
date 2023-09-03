@@ -1,13 +1,21 @@
+"use client";
+
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Projects from "./Projects";
 import Experience from "./Experience";
 import Contact from "./Contact";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <>
-      <main className="max-w-7xl mx-auto w-full px-6 pb-6">
+      <motion.main
+        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ x: -20, opacity: 0 }}
+        transition={{ duration: 1 }}
+        className="max-w-7xl pt-28 mx-auto w-full px-6 pb-6 mb-[5rem]"
+      >
         <div className="bg-gradient-to-r from-[#FBED96] to-[#ABECD6] rounded-lg shadow-lg py-8 flex flex-col gap-6 items-center">
           <div className="bg-white w-[90px] h-[90px] px-[8px] py-[8px] flex items-center justify-center rounded-full">
             <Image
@@ -40,7 +48,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
       <Projects />
       <Experience />
       <Contact />
