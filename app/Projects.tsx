@@ -99,7 +99,7 @@ const Projects = () => {
         <motion.article
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ delay: 0.15, duration: 1 }}
           className="flex flex-col gap-4"
         >
           <h1 className="font-semibold text-2xl">Assignment Portal</h1>
@@ -144,7 +144,7 @@ const Projects = () => {
         <motion.article
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
           className="flex flex-col gap-4"
         >
           <h1 className="font-semibold text-2xl">Portfolio</h1>

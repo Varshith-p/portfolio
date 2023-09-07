@@ -49,7 +49,7 @@ const Contact = () => {
         <motion.div
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           initial={{ x: 100, opacity: 0, scale: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ delay: 0.1, duration: 1 }}
           className="flex flex-col gap-1"
         >
           <label htmlFor="mail" className="font-semibold">
@@ -64,7 +64,7 @@ const Contact = () => {
         </motion.div>
         <motion.div
           whileInView={{ y: 0, opacity: 1 }}
-          initial={{ y: 50, opacity: 0 }}
+          initial={{ y: 100, opacity: 0 }}
           transition={{ duration: 1 }}
           className="flex flex-col md:col-span-2 gap-1"
         >
