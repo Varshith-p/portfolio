@@ -1,7 +1,16 @@
 import React from "react";
-import { Carousel } from "react-carousel3";
+// import { Carousel } from "react-carousel3";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import Image from "next/image";
+
+// @ts-ignore
+const Carousel = dynamic(
+  () => import("react-carousel3").then((module) => module.Carousel),
+  {
+    ssr: false,
+  }
+);
 
 const Skills = () => {
   return (
@@ -18,6 +27,7 @@ const Skills = () => {
         Skills
       </motion.h1>
       <div className="hidden md:block py-6 max-w-4xl mx-auto">
+        {/* @ts-ignore */}
         <Carousel
           height={500}
           width={900}
