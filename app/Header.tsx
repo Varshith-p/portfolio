@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import {
   Sheet,
   SheetClose,
@@ -57,6 +56,14 @@ const Header = () => {
                   onClick={() => handleScroll("projects")}
                 >
                   Projects
+                </p>
+              </SheetClose>
+              <SheetClose asChild>
+                <p
+                  className="cursor-pointer"
+                  onClick={() => handleScroll("skills")}
+                >
+                  Skills
                 </p>
               </SheetClose>
               <SheetClose asChild>

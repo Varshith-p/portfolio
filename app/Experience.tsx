@@ -50,7 +50,7 @@ const Experience = () => {
               March, 2023 - Present
             </p>
           </div>
-          <ul className="translate-x-4 text-justify md:text-start pr-2 list-disc md:text-lg font-medium pt-2">
+          <ul className="text-sm translate-x-4 text-justify md:text-start pr-2 list-disc md:text-lg font-medium pt-2">
             <li className="py-1">
               Played a pivotal role in spearheading the creation of various
               websites and web applications for a diverse range of clients.

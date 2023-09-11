@@ -31,8 +31,8 @@ const Contact = () => {
       </motion.h1>
       <form className="pr-1 md:w-[70%] mx-auto py-6 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
         <motion.div
-          whileInView={{ x: 0, opacity: 1, scale: 1 }}
-          initial={{ x: -100, opacity: 0, scale: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 1 }}
           className="flex flex-col gap-1"
         >
@@ -47,8 +47,8 @@ const Contact = () => {
           />
         </motion.div>
         <motion.div
-          whileInView={{ x: 0, opacity: 1, scale: 1 }}
-          initial={{ x: 100, opacity: 0, scale: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
           transition={{ delay: 0.1, duration: 1 }}
           className="flex flex-col gap-1"
         >

@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import { motion } from "framer-motion";
+import Skills from "./Skills";
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
         </div>
       </motion.main>
       <Projects />
+      <Skills />
       <Experience />
       <Contact />
     </>
