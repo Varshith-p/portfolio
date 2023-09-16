@@ -5,8 +5,9 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Projects from "./Projects";
 import Experience from "./Experience";
 import Contact from "./Contact";
-import { motion } from "framer-motion";
 import Skills from "./Skills";
+import { motion } from "framer-motion";
+import { handleScroll } from "./Header";
 
 export default function Home() {
   return (
@@ -34,7 +35,10 @@ export default function Home() {
             I develop ideas and help build a better world through software.
           </p>
           <div className="flex items-center text-sm md:text-lg md:gap-6">
-            <p className="bg-black md:w-fit text-white rounded-3xl px-3 md:px-6 py-1 font-medium cursor-pointer">
+            <p
+              onClick={() => handleScroll("contact")}
+              className="bg-black md:w-fit text-white rounded-3xl px-3 md:px-6 py-1 font-medium cursor-pointer"
+            >
               Contact
             </p>
             <div className="flex items-center gap-1 md:gap-2 cursor-pointer hover:bg-white hover:shadow-lg transition-all rounded-2xl px-3 py-1">

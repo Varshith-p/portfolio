@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="max-w-7xl py-16 lg:py-20 mx-auto w-full px-6"
+      className="max-w-7xl py-6 xxl:py-20 mx-auto w-full px-6"
     >
       <div className="md:flex flex-col justify-center">
         <motion.h1

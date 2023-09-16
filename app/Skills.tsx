@@ -4,7 +4,10 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <section id="skills" className="max-w-7xl py-16 mx-auto w-full px-6">
+    <section
+      id="skills"
+      className="max-w-7xl py-6 xxl:py-16 mx-auto w-full px-6"
+    >
       <div className="md:flex flex-col gap-3 justify-center">
         <motion.h1
           whileInView={{ y: 0, opacity: 1 }}
@@ -14,7 +17,7 @@ const Skills = () => {
         >
           Skills
         </motion.h1>
-        <div className="py-6 grid md:grid-cols-3 justify-center gap-x-8 gap-y-5">
+        <div className="py-6 grid md:grid-cols-3 justify-center md:gap-x-8 gap-y-5">
           <Image
             src="/images/backend.gif"
             alt="backend gif"
@@ -36,7 +39,7 @@ const Skills = () => {
             height={80}
             className="hidden lg:block justify-self-center"
           />
-          <div className="w-full flex flex-col text-center justify-self-center bg-slate-100 shadow-md rounded-xl py-4 px-6">
+          <div className="w-80 md:w-full flex flex-col text-center justify-self-center bg-slate-100 shadow-md rounded-xl py-4 px-6">
             <div className="flex items-center w-full justify-center gap-2 pb-4">
               <h1 className="text-2xl font-semibold">Backend</h1>
               <Image

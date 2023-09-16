@@ -12,7 +12,7 @@ import {
 import { Bars3BottomRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
-const handleScroll = (id: string) => {
+export const handleScroll = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
     const offsetTop = element.offsetTop;
