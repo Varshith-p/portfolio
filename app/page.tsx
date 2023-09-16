@@ -15,9 +15,9 @@ export default function Home() {
         whileInView={{ x: 0, opacity: 1 }}
         initial={{ x: -20, opacity: 0 }}
         transition={{ duration: 1 }}
-        className="max-w-7xl pt-28 mx-auto w-full px-6 pb-6 mb-[5rem]"
+        className="max-w-7xl pt-[15vh] mx-auto w-full px-6"
       >
-        <div className="bg-gradient-to-r from-[#FBED96] to-[#ABECD6] rounded-lg shadow-lg py-8 flex flex-col gap-6 items-center">
+        <div className="py-8 md:py-0 md:h-[80vh] bg-gradient-to-r from-[#FBED96] to-[#ABECD6] rounded-lg shadow-lg flex flex-col gap-6 items-center justify-center">
           <div className="bg-white w-[90px] h-[90px] px-[8px] py-[8px] flex items-center justify-center rounded-full">
             <Image
               src="./avatar-new.svg"

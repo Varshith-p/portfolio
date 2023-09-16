@@ -6,10 +6,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <section
-      id="experience"
-      className="max-w-7xl mx-auto w-full px-6 mt-10 lg:mt-[2rem]"
-    >
+    <section id="experience" className="max-w-7xl py-16 mx-auto w-full px-6">
       <motion.h1
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 50, opacity: 0 }}

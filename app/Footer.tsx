@@ -11,6 +11,11 @@ const Footer = () => {
   return (
     <footer className="bg-[#111827] text-white py-4 text-xs lg:text-base">
       <div className="flex w-full justify-center items-center gap-2 pb-2">
+        <p>+91 8367768266</p>
+        <div>|</div>
+        <p>varshithpuligadda@gmail.com</p>
+      </div>
+      <div className="flex w-full justify-center items-center gap-2 pb-2">
         <HoverCard>
           <HoverCardTrigger asChild>
             <a

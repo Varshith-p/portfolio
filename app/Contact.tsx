@@ -3,23 +3,38 @@
 import React from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
 
-  const handleSubmit = (
+  const handleSubmit = async (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     event.preventDefault();
+    setIsLoading(true);
+    if (!name || !email || !message) {
+      alert("Fill all fields");
+      return;
+    }
+    await axios.post(
+      "http://localhost:3000/api/sendMail",
+      // @ts-ignore
+      { name, email, message }
+    );
     toast({ title: "Your message has been sent." });
-    console.log("Hello");
+    setName("");
+    setEmail("");
+    setMessage("");
+    setIsLoading(false);
   };
 
   return (
-    <section
-      id="contact"
-      className="max-w-7xl mx-auto w-full px-6 mt-10 md:mt-[5rem] pb-12"
-    >
+    <section id="contact" className="max-w-7xl py-16 mx-auto w-full px-6">
       <motion.h1
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 50, opacity: 0 }}
@@ -42,6 +57,11 @@ const Contact = () => {
           <input
             type="text"
             name="name"
+            value={name}
+            required
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
             id="name"
             className="border border-gray-700 rounded-md px-2 py-1"
           />
@@ -58,6 +78,11 @@ const Contact = () => {
           <input
             type="email"
             name="mail"
+            required
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
             id="mail"
             className="border border-gray-700 rounded-md px-2 py-1"
           />
@@ -74,6 +99,11 @@ const Contact = () => {
           <textarea
             className="border border-gray-700 rounded-md px-2 py-1"
             name="message"
+            value={message}
+            required
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
             id="message"
             cols={30}
             rows={7}
@@ -81,10 +111,12 @@ const Contact = () => {
         </motion.div>
         <motion.button
           onClick={handleSubmit}
+          type="submit"
+          disabled={isLoading}
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          className="bg-[#ABECD6] text-lg font-semibold py-2 rounded-md hover:shadow-md transition-all"
+          className={`bg-[#ABECD6] text-lg font-semibold py-2 rounded-md hover:shadow-md transition-all cursor-pointer disabled:bg-[#c7e5db] disabled:cursor-not-allowed`}
         >
           Send Message
         </motion.button>

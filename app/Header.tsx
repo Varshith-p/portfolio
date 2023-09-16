@@ -16,13 +16,13 @@ const handleScroll = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
     const offsetTop = element.offsetTop;
-    window.scroll({ top: offsetTop - 84, behavior: "smooth" });
+    window.scroll({ top: offsetTop - 70, behavior: "smooth" });
   }
 };
 
 const Header = () => {
   return (
-    <header className="fixed bg-white inset-x-0 w-full px-6 pt-7 z-50 max-w-7xl mx-auto flex justify-between">
+    <header className="fixed bg-white inset-x-0 w-full px-6 z-50 max-w-7xl mx-auto flex justify-between items-center h-[10vh] md:h-[15vh]">
       <p
         onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
         className="w-fit cursor-pointer"
