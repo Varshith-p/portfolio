@@ -22,7 +22,7 @@ const Contact = () => {
       return;
     }
     await axios.post(
-      "http://localhost:3000/api/sendMail",
+      "https://varshithpuligadda.vercel.app/api/sendMail",
       // @ts-ignore
       { name, email, message }
     );
